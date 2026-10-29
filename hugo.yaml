@@ -1,0 +1,89 @@
+# Site configuration for Vipul Raja's essays.
+# TODO: change baseURL once the domain is purchased.
+baseURL: https://vipulraja.dev/
+locale: en-us
+title: Vipul Raja
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+enableEmoji: true
+
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home: [HTML, RSS, JSON] # JSON powers the client-side search page.
+
+params:
+  env: production
+  title: Vipul Raja
+  description: "Essays on AI platforms, MLOps, agents, and engineering leadership. Personal opinions only."
+  author: Vipul Raja
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  ShowRssButtonInSectionTermList: true
+  ShowFullTextinRSS: true
+
+  homeInfoParams:
+    Title: "Vipul Raja"
+    Content: >
+      Essays on AI platforms, MLOps, agents, and engineering leadership.<br>
+      <em>Opinions are my own and do not represent my employer.</em>
+
+  socialIcons:
+    # TODO: add LinkedIn / Medium profile URLs.
+    # - name: linkedin
+    #   url: "https://www.linkedin.com/in/REPLACE_ME/"
+    # - name: medium
+    #   url: "https://medium.com/@REPLACE_ME"
+    - name: github
+      url: "https://github.com/vipulraja"
+    - name: rss
+      url: "index.xml"
+
+  # Optional, free, cookieless analytics. Paste your token after creating a
+  # Cloudflare Web Analytics site, then uncomment the partial in
+  # layouts/partials/extend_head.html.
+  cloudflareAnalyticsToken: ""
+
+menu:
+  main:
+    - identifier: essays
+      name: Essays
+      url: /essays/
+      weight: 10
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 40
+
+taxonomies:
+  tag: tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allow inline HTML in Markdown
+  highlight:
+    noClasses: false
+    style: github
