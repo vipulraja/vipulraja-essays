@@ -23,7 +23,7 @@ outputs:
 params:
   env: production
   title: Vipul Raja
-  description: "Essays on AI platforms, MLOps, agents, and engineering leadership. Personal opinions only."
+  description: "Essays on epistemology, theoretical physics, AI, and running. Personal opinions only."
   author: Vipul Raja
   defaultTheme: auto
   ShowReadingTime: true
@@ -39,7 +39,7 @@ params:
   homeInfoParams:
     Title: "Vipul Raja"
     Content: >
-      Essays on AI platforms, MLOps, agents, and engineering leadership.<br>
+      Essays on epistemology, theoretical physics, AI, and long miles on trails.<br>
       <em>Opinions are my own and do not represent my employer.</em>
 
   socialIcons:
