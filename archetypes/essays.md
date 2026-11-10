@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: true
 description: "One-sentence summary shown in listings and social previews."
 tags: []
-ShowToc: true
+ShowToc: false
 ---
 
 <!-- Pre-publish checklist:
